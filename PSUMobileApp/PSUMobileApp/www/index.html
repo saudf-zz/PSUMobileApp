@@ -11,15 +11,22 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/[version]/jquery.mobile-[version].min.css" />
+        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <script src="jquery/"></script>
         <title>PSUMobileApp</title>
     </head>
     <body>
+        <div data-role="header">
+
+
+        </div>
         <div class="app">
             <p id="deviceready" class="event">Test test test</p>
             <!--<img src="psulogo.png" /><br />-->
             <form>
-                <input type="number" name="userID" />
-                <input type="password" name="userPass" />
+                <input type="number" name="userID" placeholder="Student" />
+                <input type="password" name="userPass" placeholder="Iqama/National ID number" data-role="button" />
                 <button type="submit">Login</button>
             </form>
         </div>
