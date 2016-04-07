@@ -1,19 +1,25 @@
-﻿         /*   body , html {
-                width: 100% !important;
-                height: 100% !important;
-            }
+﻿html, body {
+    height: 100%;
+    width: 100%;
+}
 
-            .ui-content, .ui-grid-c {
-                height: 100% !important;
-                width: 100% !important;
-            }
+.header{
+    height: 10%;
+    background-color: #25B6C7;
+}
 
-            .ui-block-a , .ui-block-b{
-                height: 25% !important;
+.ui-contents {
+    height: 80%;
+}
 
-            }
-*/
-            .adjust {
-                width: 100%;
-                height: auto;
-            }
+.adjust {
+    width: 100%;
+    height: auto;
+}
+
+ .ui-grid-b [class*=ui-block-]>.ui-btn, .ui-grid-a [class*=ui-block-]>.ui-select,  .ui-grid-a [class*=ui-block-]>.ui-checkbox,  .ui-grid-a [class*=ui-block-]>.ui-radio,  .ui-grid-a [class*=ui-block-]>button.ui-btn-inline,  .ui-grid-a [class*=ui-block-]>button.ui-btn-icon-notext
+{
+margin:5px !important;
+text-indent: 0px !important;
+font-size: small !important;
+}

@@ -106,6 +106,6 @@
   <platform name="wp8">
     <splash src="res/screens/wp8/SplashScreenImage.png" width="768" height="1280" />
   </platform>
-  <preference name="Orientation" value="portrait" />
+  <preference name="Orientation" value="default" />
   <preference name="Fullscreen" value="False" />
 </widget>

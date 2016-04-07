@@ -1,10 +1,43 @@
 body, html, .page {
     height: 100%;
     width: 100%;
-
 }
 
 .header {
     height: 66.6%;
     width: 100%;
+    background-color: #25B6C7;
 }
+
+.ui-contents{
+    max-height: 33.4%;
+}
+
+.centerImage
+{
+text-align:center;
+vertical-align: central;
+display:block;
+margin-right: auto;
+margin-left: auto;
+}
+
+.logo
+{
+    background-image:url('../images/psulogo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input
+{
+    background: transparent;
+    border: none;
+    border-style: none;
+}
+
