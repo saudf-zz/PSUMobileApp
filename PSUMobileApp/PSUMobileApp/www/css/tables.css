@@ -1,0 +1,31 @@
+﻿.blueTable{
+    width: 100%;
+    border-spacing: 50px;
+    border-collapse:collapse;
+    background-color: #25B6C9;
+    border: none;
+    color: white;
+}
+
+.blueTable th{
+    border:1px solid white;
+    border-spacing: 50px;
+}
+
+.whiteTable{
+    width: 100%;
+    border-collapse: collapse;
+    text-align:center;
+}
+
+.whiteTable th{
+    border: 1px solid white;
+    color: white;
+    background-color: #25B6C9;
+}
+
+tbody, tbody td{
+    border: 1px solid #25B6C9;
+    color: #25B6C9;
+    background-color: white;
+}

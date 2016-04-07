@@ -1,0 +1,27 @@
+﻿body, html, #page {
+    height: 100%;
+    width:100%;
+
+}
+.header{
+    height:10%;
+    background-color: #25B6C7;
+    color: white;
+
+}
+.studentInfo{
+    height:65%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right:10px;
+    margin-left: 10px;
+     
+}
+.labelName{
+    color: #25B6C7;
+
+
+}
+.labelInfo{
+    color: #727272;
+}
