@@ -1,0 +1,19 @@
+﻿         /*   body , html {
+                width: 100% !important;
+                height: 100% !important;
+            }
+
+            .ui-content, .ui-grid-c {
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            .ui-block-a , .ui-block-b{
+                height: 25% !important;
+
+            }
+*/
+            .adjust {
+                width: 100%;
+                height: auto;
+            }

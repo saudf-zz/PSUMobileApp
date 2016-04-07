@@ -1,29 +1,31 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <script type="text/javascript" src="jquery/jquery-2.2.2.min.js"></script>
-        <script type="text/javascript" src="jquery/jquery.mobile-1.4.5.min.js"></script>
-        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+        <script type="text/javascript" src="scripts/jquery/jquery-2.2.2.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="scripts/jquery/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <title>PSUMobileApp</title>
     </head>
     <body>
-        <div data-role="page">
-            <div data-role="header">
-                <img src="images/psulogo.png" />
+        <div data-role="page" class="page">
+            <div data-role="header" class="header" style="background-color: #25b6c7;;">
+                <img src="images/psulogo.png" style="width: 50%; height: auto; position:center;" align="middle" alt="logo" />
             </div>
             <div class="ui-content" role="main">
                 <form action="menu.html">
                     <input type="number" name="userID" placeholder="Student ID" />
                     <input type="password" name="userPass" placeholder="Iqama/National ID number" />
-                    <button type="submit" data-role="button">Login</button>
+                    <!--<button type="submit" data-role="button">Login</button>-->
+                    <img src="images/Screens Bs/1/2.png" style="width: 90%; height: auto;" />
                 </form>
             </div>
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed">
                 <a href="#">English</a>
             </div>
         </div>
