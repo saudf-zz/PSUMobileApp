@@ -1,6 +1,9 @@
-﻿.blueTable{
+﻿th, td{
+    padding: 5px;
+}
+
+.blueTable{
     width: 100%;
-    border-spacing: 50px;
     border-collapse:collapse;
     background-color: #25B6C9;
     border: none;
@@ -9,7 +12,6 @@
 
 .blueTable th{
     border:1px solid white;
-    border-spacing: 50px;
 }
 
 .whiteTable{
@@ -29,3 +31,4 @@ tbody, tbody td{
     color: #25B6C9;
     background-color: white;
 }
+
