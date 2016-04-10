@@ -7,28 +7,22 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
         <script type="text/javascript" src="scripts/jquery/jquery-2.2.2.min.js"></script>
-        <script type="text/javascript" src="scripts/jquery/jquery.mobile-1.4.5.min.js"></script>
-        <link rel="stylesheet" href="scripts/jquery/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/layout.css" />
         <link rel="stylesheet" href="css/index.css" />
         <title>PSUMobileApp</title>
     </head>
     <body>
-        <div data-role="page" class="page">
             <div class="header">
-                <div class="logo">&nbsp;</div>
+                <div class="logo"></div>
             </div>
-            <div class="ui-content" role="main">
+            <div class="content">
                 <form action="menu.html">
-                    <input type="number" name="userID" placeholder="Student ID" class="input" />
-                    <input type="password" name="userPass" placeholder="Iqama/National ID number" class="input" />
-                    <!--<button type="submit" data-role="button">Login</button>-->
-                    <a href="menu.html"><img src="images/Screens Bs/1/2.png" style="width: 90%; height: auto;" class="centerImage" /></a>
+                    <input type="number" name="userID" placeholder="Student ID" />
+                    <input type="password" name="userPass" placeholder="Iqama/National ID number" />
+                    <input type="submit" value="Login" />
                 </form>
             </div>
-            <!--<div data-role="footer" data-position="fixed" data-dissmiss="no">
-                <a href="#">English</a>
-            </div>-->
-        </div>
+        <a href="#">English</a>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="scripts/platformOverrides.js"></script>
         <script type="text/javascript" src="scripts/index.js"></script>

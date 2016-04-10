@@ -18,6 +18,25 @@ p{
     color: #727272;
 }
 
+img {
+    object-fit: contain;
+}
+
+input[type=text], input[type=password], input[type=number]{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+input[type=submit]{
+    border-radius: 25px;
+    background-color: #FEC504;
+    border:none;
+    width: 80%;
+    color: #FFFFFF;
+}
+
 .header{
     height: 10%;
     background-color: #25B6C9;

@@ -9,22 +9,13 @@ body, html, .page {
     background-color: #25B6C7;
 }
 
-.ui-contents{
-    max-height: 33.4%;
-}
-
-.centerImage
-{
-text-align:center;
-vertical-align: central;
-display:block;
-margin-right: auto;
-margin-left: auto;
+.content{
+    height: 33.4%;
 }
 
 .logo
 {
-    background-image:url('../images/psulogo.png');
+    background-image:url(../images/psulogo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -34,10 +25,17 @@ margin-left: auto;
     margin-right: auto;
 }
 
-.input
-{
-    background: transparent;
-    border: none;
-    border-style: none;
+form {
+    height:100%;
+    width: 100%;
+    text-align: center;
 }
 
+input[type=submit], input[type=number], input[type=password]{
+    height: 22%;
+    width: 92.5%;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+}

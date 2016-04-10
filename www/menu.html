@@ -6,27 +6,26 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
-    <script src="jquery/jquery-2.2.2.min.js"></script>
-    <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
-    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css" />
+    <script type="text/javascript" src="scripts/jquery/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="scripts/jquery/jquery.mobile-1.4.5.min.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <title>PSUMobileApp</title>
 </head>
 <body>
-    <div data-role="header">
-        Header
-
-    </div>
-    <div class="ui-content">
-        <div class="ui-grid-a">
-            <div class="ui-block-a ui-btn"><img alt="Student Information" style="height: 100%; width: auto;" src="images/cclogo.jpg" /><p>Student Information</p></div>
-            <div class="ui-block-b ui-btn"><img alt="Abcences" style="height: 100%; width: auto;" src="images/cclogo.jpg" /><p>Abcences</p></div>
-            <div class="ui-block-a ui-btn"><img alt="Student Plan" style="height: 100%; width: auto;" src="images/cclogo.jpg" /><p>Student Plan</p></div>
-            <div class="ui-block-b ui-btn"><img alt="Schedule" style="height: 100%; width: auto;" src="images/cclogo.jpg" /><p>Schedule</p></div>
-            <div class="ui-block-a ui-btn"><img alt="Exams Schedule" style="height: 100%; width: auto;" src="images/cclogo.jpg" /><p>Exams Schedule</p></div>
-            <div class="ui-block-b ui-btn"><img alt="Academic Calendar" style="height: 100%; width: auto;" src="images/cclogo.jpg" /><p>Academic Calendar</p></div>
-            <div class="ui-block-a ui-btn"><img alt="Results" style="height: 100%; width: auto;" src="images/cclogo.jpg" /><p>Results</p></div>
-            <div class="ui-block-b ui-btn"><img alt="Events and News" style="height: 100%; width: auto;" src="images/cclogo.jpg" /><p>Events and News</p></div>
+    <div data-role="page">
+        <div class="header">header</div>
+        <div class="ui-content" role="main">
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="info.html" class="ui-btn"><br /><span>Student Information</span></a></div>
+                <div class="ui-block-b"><span>Absences</span></div>
+                <div class="ui-block-a"><img alt="Student Plan" src="images/cclogo.jpg" /><br /><span>Student Plan</span></div>
+                <div class="ui-block-b ui-btn"><img alt="Schedule" src="images/cclogo.jpg" /><br />Schedule</div>
+                <div class="ui-block-a ui-btn"><img alt="Exams Schedule" src="images/cclogo.jpg" />Exams Schedule</div>
+                <div class="ui-block-b ui-btn"><img alt="Academic Calendar" src="images/cclogo.jpg" />Academic Calendar</div>
+                <div class="ui-block-a ui-btn"><img alt="Results" src="images/cclogo.jpg" />Results</div>
+                <div class="ui-block-b ui-btn"><img alt="Events and News" src="images/cclogo.jpg" />Events and News</div>
+            </div>
         </div>
     </div>
 </body>
