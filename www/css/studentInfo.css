@@ -1,0 +1,18 @@
+﻿label{
+    display: block;
+    margin: 10px;
+}
+
+.labelName{
+    margin-bottom: 0px;
+    color: #25B6C9;
+}
+
+.labelInfo{
+    margin-top: 0px;
+    color: #727272;
+}
+
+#navDiv{
+    padding-top: 2px;
+}

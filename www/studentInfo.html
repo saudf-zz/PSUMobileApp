@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/studentInfo.css" />
     <title>PSUMobilApp</title>
 </head>
 <body>
         <div class="header" data-role="header" data-add-back-btn="true" data-position="fixed">
             <span>Student Info</span>
         </div>
-        <div class="ui-content studentInfo">
+        <div class="contents">
 
             <p>
                 <label class="labelName">Name:</label>
@@ -32,10 +33,10 @@
                 <label class="labelName"> GPA:</label>
                 <label class="labelInfo">NaN</label>
             </p>
+            <div id="navDiv">
+                <a class="navigation">Student Card</a>
+                <a class="navigation">QR Code</a>
+            </div> 
         </div>
-        <div >
-               <button name="StudentCardButton" data-role="button">Student Card</button>
-               <button name="StudentQRCode" data-role="button">QR Code</button>
-        </div> 
     </body>
 </html>

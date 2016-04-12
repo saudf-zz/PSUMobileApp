@@ -9,8 +9,12 @@
 
 span{
     color: white;
-    font-size: 3.5vw;
+    padding: 15px;
+    font-size: medium;
+    /*xfont-size: 3.5vw;*/
     font-weight:800;
+    display: block;
+    text-align: center;
 }
 
 p{
@@ -29,12 +33,20 @@ input[type=text], input[type=password], input[type=number]{
     outline: none;
 }
 
-input[type=submit]{
+a.navigation, input[type=submit]{
     border-radius: 25px;
     background-color: #FEC504;
     border:none;
     width: 80%;
     color: #FFFFFF;
+}
+
+a.navigation{
+    display: block;
+    padding: 15px;
+    margin: 25px auto;
+    text-align: center;
+    width: 90%;
 }
 
 .header{

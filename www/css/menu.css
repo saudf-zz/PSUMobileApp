@@ -1,32 +1,51 @@
-﻿html, body {
-    height: 100% !important;
-    width: 100% !important;
+﻿.menu{
+    box-sizing: border-box;
+    height: 90%;
+    width: 100%;
+    padding-top: 15px;
 }
 
-.header {
-    height: 10% !important;
-    background-color: #25B6C7 !important;
+#leftMenu{
+    float: left;
+    width: 50%;
 }
 
-.ui-contents {
-    height: 80% !important;
+#rightMenu{
+    float: right;
+    width: 50%;
 }
 
-.ui-grid-a {
-    height: 100% !important;
+#leftMenu a{
+    margin-left: 30px;
+    margin-right: 15px;
 }
 
-.ui-block-a .ui-btn, .ui-block-b .ui-btn {
-    height: 25% !important;
-    background-image: url("../images/cclogo.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: #25B6C7 !important;
+#rightMenu a{
+    margin-right: 30px;
+    margin-left: 15px;
 }
 
-img {
-    width: 40%;
-    height: auto;
-    object-fit: scale-down;
+a{
+    padding-top: 10px;
+    height: 25%;
+    margin: 15px 0 0;
+    display: block;
+    border-radius: 15px;
+    text-decoration:none;
+    background-color: #25B6C9;
+}
+
+img{
+    height: 70px;
+    width: 50px;
+    display: block;
+    margin: auto auto auto auto;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
 }

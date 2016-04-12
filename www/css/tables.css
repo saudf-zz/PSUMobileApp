@@ -7,10 +7,11 @@
     border-collapse:collapse;
     background-color: #25B6C9;
     border: none;
+    text-align: center;
     color: white;
 }
 
-.blueTable th{
+.blueTable th, .blueTable td{
     border:1px solid white;
 }
 
@@ -26,9 +27,18 @@
     background-color: #25B6C9;
 }
 
-tbody, tbody td{
+.whiteTable tbody,.whiteTable tbody td{
     border: 1px solid #25B6C9;
     color: #25B6C9;
     background-color: white;
 }
 
+.blueTable td, .blueTable th{
+    border: 1px solid white;
+    color: white;
+    background-color: #25B6C9;
+}
+
+#corner{
+    background-color: white;
+}

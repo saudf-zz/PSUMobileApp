@@ -7,25 +7,26 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
     <script type="text/javascript" src="scripts/jquery/jquery-2.2.2.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery/jquery.mobile-1.4.5.min.js"></script>
-    <link rel="stylesheet" href="scripts/jquery/jquery.mobile-1.4.5.min.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <title>PSUMobileApp</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <title>PSU Mobile App</title>
 </head>
 <body>
-    <div data-role="page">
-        <div class="header">header</div>
-        <div class="ui-content" role="main">
-            <div class="ui-grid-a">
-                <div class="ui-block-a"><a href="info.html" class="ui-btn"><br /><span>Student Information</span></a></div>
-                <div class="ui-block-b"><span>Absences</span></div>
-                <div class="ui-block-a"><img alt="Student Plan" src="images/cclogo.jpg" /><br /><span>Student Plan</span></div>
-                <div class="ui-block-b ui-btn"><img alt="Schedule" src="images/cclogo.jpg" /><br />Schedule</div>
-                <div class="ui-block-a ui-btn"><img alt="Exams Schedule" src="images/cclogo.jpg" />Exams Schedule</div>
-                <div class="ui-block-b ui-btn"><img alt="Academic Calendar" src="images/cclogo.jpg" />Academic Calendar</div>
-                <div class="ui-block-a ui-btn"><img alt="Results" src="images/cclogo.jpg" />Results</div>
-                <div class="ui-block-b ui-btn"><img alt="Events and News" src="images/cclogo.jpg" />Events and News</div>
-            </div>
+    <div class="header" data-role="header" data-add-back-btn="true" data-position="fixed">
+        <span>PSU Mobile App</span>
+    </div>
+    <div class="menu">
+        <div id="leftMenu">
+            <a href="studentInfo.html"><img src="images/Screens Bs/2/studentInfo.png" /><label>Student Information</label></a>
+            <a><img src="images/Screens Bs/2/studentPlan.png" /><label>Student Plan</label></a>
+            <a href="examsSchedule.html"><img src="images/Screens Bs/2/examsSchedule.png" /><label>Exams Schedule</label></a>
+            <a><img src="images/Screens Bs/2/absences.png" /><label>Results</label></a>
+        </div>
+        <div id="rightMenu">
+            <a href="absences.html"><img src="images/Screens Bs/2/absences.png" /><label>Absences</label></a>
+            <a href="studentschedule.html"><img src="images/Screens Bs/2/studentSchedule.png" /><label>Student Schedule</label></a>
+            <a><img src="images/Screens Bs/2/academicCalender.png" /><label>Academic Calender</label></a>
+            <a><img src="images/Screens Bs/2/absences.png" /><label>News & Events</label></a>
         </div>
     </div>
 </body>
