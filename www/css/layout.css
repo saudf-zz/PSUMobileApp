@@ -1,6 +1,11 @@
-﻿body, html {
+﻿@font-face{
+    font-family: Neo Tech;
+    src:url('../fonts/NeoTech.otf');
+}
+body, html {
     height: 100%;
     width: 100%;
+    font-family: Neo Tech;
     font-size: 100%;
     font-weight:500;
     margin: 0px;
