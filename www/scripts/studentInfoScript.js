@@ -1,7 +1,7 @@
 ﻿$(function () {
     
     $.getJSON('http://localhost:38133/', function (data) {
-
+            
             var vals = [];
             $.each(data, function (key, val) {
                 vals.push(val);
