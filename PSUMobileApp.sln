@@ -1,13 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "PSUMobileApp", "PSUMobileApp.jsproj", "{7DD24585-5174-4432-814D-E45C38745673}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Android = Debug|Android
+		Debug|Any CPU = Debug|Any CPU
 		Debug|iOS = Debug|iOS
 		Debug|Windows Phone (Universal) = Debug|Windows Phone (Universal)
 		Debug|Windows Phone 8 = Debug|Windows Phone 8
@@ -16,6 +17,7 @@ Global
 		Debug|Windows-x64 = Debug|Windows-x64
 		Debug|Windows-x86 = Debug|Windows-x86
 		Release|Android = Release|Android
+		Release|Any CPU = Release|Any CPU
 		Release|iOS = Release|iOS
 		Release|Windows Phone (Universal) = Release|Windows Phone (Universal)
 		Release|Windows Phone 8 = Release|Windows Phone 8
@@ -28,6 +30,7 @@ Global
 		{7DD24585-5174-4432-814D-E45C38745673}.Debug|Android.ActiveCfg = Debug|Android
 		{7DD24585-5174-4432-814D-E45C38745673}.Debug|Android.Build.0 = Debug|Android
 		{7DD24585-5174-4432-814D-E45C38745673}.Debug|Android.Deploy.0 = Debug|Android
+		{7DD24585-5174-4432-814D-E45C38745673}.Debug|Any CPU.ActiveCfg = Debug|Android
 		{7DD24585-5174-4432-814D-E45C38745673}.Debug|iOS.ActiveCfg = Debug|iOS
 		{7DD24585-5174-4432-814D-E45C38745673}.Debug|iOS.Build.0 = Debug|iOS
 		{7DD24585-5174-4432-814D-E45C38745673}.Debug|iOS.Deploy.0 = Debug|iOS
@@ -52,6 +55,7 @@ Global
 		{7DD24585-5174-4432-814D-E45C38745673}.Release|Android.ActiveCfg = Release|Android
 		{7DD24585-5174-4432-814D-E45C38745673}.Release|Android.Build.0 = Release|Android
 		{7DD24585-5174-4432-814D-E45C38745673}.Release|Android.Deploy.0 = Release|Android
+		{7DD24585-5174-4432-814D-E45C38745673}.Release|Any CPU.ActiveCfg = Release|Android
 		{7DD24585-5174-4432-814D-E45C38745673}.Release|iOS.ActiveCfg = Release|iOS
 		{7DD24585-5174-4432-814D-E45C38745673}.Release|iOS.Build.0 = Release|iOS
 		{7DD24585-5174-4432-814D-E45C38745673}.Release|iOS.Deploy.0 = Release|iOS
