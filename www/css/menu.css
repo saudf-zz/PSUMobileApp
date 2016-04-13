@@ -1,17 +1,20 @@
 ﻿.menu{
-    box-sizing: border-box;
     height: 90%;
+    box-sizing: content-box;
     width: 100%;
-    padding-top: 15px;
 }
 
 #leftMenu{
     float: left;
+    box-sizing: content-box;
+    padding-top: 15px;
     width: 50%;
 }
 
 #rightMenu{
     float: right;
+    box-sizing: content-box;
+    padding-top: 15px;
     width: 50%;
 }
 
@@ -27,6 +30,7 @@
 
 a{
     padding-top: 10px;
+    box-sizing: content-box;
     height: 25%;
     margin: 15px 0 0;
     display: block;
