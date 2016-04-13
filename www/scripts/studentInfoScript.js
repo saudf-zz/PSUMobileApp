@@ -5,14 +5,16 @@
             var vals = [];
             $.each(data, function (key, val) {
                 vals.push(val);
-            } 
+            }
         );
-        document.write(vals[0]);
-        /*
-        for (index = 0, length = vals.length; index < length; index++) {
-            $("#navUL").append($("<li class=\"active\"><a href=\"#\" class=\"courseLink\">" + vals[index] + "</a></li>"));
-        }
-        */
+            var fullName = "";
+            for (var index = 0; index < 3; index++) {
+                fullName += vals[index] + " ";
+            }
+            $("#fullName").text(fullName);
+            $("#studentID").text(vals[3]);
+            $("#major").text(vals[4]);
+            $("#gpa").text(vals[5]);
         }
     );
 });
