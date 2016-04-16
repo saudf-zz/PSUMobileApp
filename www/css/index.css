@@ -43,11 +43,15 @@ a{
     color: #25B6C7;
 }
 
-input[type=submit], input[type=number], input[type=password]{
+button, input[type=number], input[type=password]{
     height: 22%;
     width: 92.5%;
 }
 
-input[type=submit]{
+#loginError{
+    color:red;
+}
+
+button{
     margin-top: 25px;
 }

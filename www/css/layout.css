@@ -38,7 +38,7 @@ input[type=text], input[type=password], input[type=number]{
     outline: none;
 }
 
-a.navigation, input[type=submit]{
+a.navigation, input[type=submit], button {
     border-radius: 25px;
     background-color: #FEC504;
     border:none;
@@ -62,6 +62,7 @@ a.navigation{
     text-align: center;
     vertical-align: central;
 }
+
 
 .contents{
     height: 75%;

@@ -1,44 +1,34 @@
-﻿$(function () {
+﻿// <reference path="jquery/jquery-2.2.3.min.js" />
 
 
-    /*function init() { document.addEventListener("deviceready", deviceReady, false); delete init; }
 
-    function deviceReady() {*/
-
-        $("#loginForm").on("click", function (e) {
-            //disable the button so we can't resubmit while we wait
-            $("#submitButton", this).attr("disabled", "disabled");
-            var u = $("#userId", this).val();
-            var p = $("#userPass", this).val();
-            if (u != '' && p != '') {
-                $.post("http://localhost:38133/", { userID: u, userPass: p }, function (res) {
-                    if (res == true) {
-                        $.mobile.changePage("menu.html");
-                    } else {
-                        navigator.notification.alert("Your login failed", function () { });
-                    }
-                    $("#submitButton").removeAttr("disabled");
-                }, "json");
+    $(function () {
+        $('#loginButton').click(function () {
+            var u = $('#id').val();
+            var p = $('#pass').val();
+            if(u='' or p=''){
+                //invalid input, ala'a please add validation :)
             }
-            return false;
+            $.ajax({
+                type: "POST",
+                dataType: "JSON",
+                data: { UserID: u, UserPass: p },
+                url: "http://localhost:38133/login.php",
+                success: function (data, s, x) {
+                    if (data[0] == 1) {
+                        //todo(Saud): there should be a longer login script here
+                        window.location = "menu.html";
+                    } else if (data[0] == 0) {
+                        //todo: Ala'a, this works but still adds the text every time a failed login happens, can be corrected with a hidden element that we show or anothe js function, up to you
+                        $('form').after('<b id="loginError">ID and/or Password is wrong!</b>');
+                    } else {
+                        //this means the document returned -1, should never ever happen
+                        alert('fatal error, data was not validated.');
+                    }
+                },
+                fail: function () {
+                    alert('error');
+                }
+            });
         });
-        /*
-        $("#loginForm").submit(function () {
-
-
-        var userID = $('input[name="userID"]').val();
-        var userPass = $('input[name="userPass"]').val();
-        document.write(userID);
-        $.post("http//:localhost:38133/login.php",
-        {
-            UserID: userID,
-            UserPass: userPass
-        },
-        function (data, status) {
-            document.write("Data: " + data + "\nStatus: " + status);
-        });
-
-        });
-        */
-    /*}*/
-});
+    });
