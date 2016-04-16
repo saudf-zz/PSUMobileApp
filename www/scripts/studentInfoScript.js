@@ -1,7 +1,11 @@
 ﻿$(function () {
-    
-    $.getJSON('http://localhost:38133/', function (data) {
-            
+    $.ajax({
+        type: "POST",
+        dataType: "JSON",
+        data: { UserID: window.localStorage.getItem('userID') },
+        url: "http://localhost:38133/index.php",
+        success: function (data) {
+
             var values = [];
             $.each(data, function (key, val) {
                 values.push(val);
@@ -18,6 +22,9 @@
             $("#studentID").text(values[3]);
             $("#major").text(values[4]);
             $("#gpa").text(values[5]);
+        },
+        fail: function () {
+            //fail code
         }
-    );
+    });
 });
