@@ -32,7 +32,7 @@ MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAILMveJq+2yD2rTo8Fu9ZqtRyylzLyIU\
                         if (data[0] == 1) {
                             //todo(Saud): there should be a longer login script here
                             window.localStorage.setItem('loggedIn', true);
-                            window.localStorage.setItem('userID', u);
+                            window.localStorage.setItem('userID', $('#id').val());
                             window.location = "menu.html";
                         } else if (data[0] == 0) {
                             //todo: Ala'a, this works but still adds the text every time a failed login happens, can be corrected with a hidden element that we show or anothe js function, up to you
