@@ -54,4 +54,5 @@ button, input[type=number], input[type=password]{
 
 button{
     margin-top: 25px;
+    font-size: 16px;
 }
