@@ -1,0 +1,24 @@
+﻿.studentPlanNav{
+    list-style: none;
+    margin-left: 1px;
+    padding-left: 0;
+}
+
+li {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    float: left;
+    padding: 5px 10px;
+    margin: 1px 1px 1px 0;
+    background-color: #727272;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li:active{
+    background-color: #25B6C9;
+}
