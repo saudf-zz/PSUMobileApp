@@ -14,7 +14,7 @@ $(function () {
             xhttp.send();
         }*/
 
-        $.ajax({
+        $.ajax({ 
             type: "POST",
             dataType: "JSON",
             data: { UserID: window.localStorage.getItem("UserID") },
