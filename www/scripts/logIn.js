@@ -10,6 +10,7 @@ function onDeviceReady() {
     document.addEventListener('resume', onResume.bind(this), false);
 
     $(function () {
+
         $('#loginButton').click(function () {
             if (u == '' || p == '') {
                 //invalid input, ala'a please add validation :) and also stopp this event
@@ -27,12 +28,11 @@ MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAILMveJq+2yD2rTo8Fu9ZqtRyylzLyIU\
                     type: "POST",
                     dataType: "JSON",
                     data: { UserID: u, UserPass: p },
-                    url: "http://localhost:38133/login.php",
+                    url: "http://localhost:38133/index.php?req=login",
                     success: function (data, s, x) {
                         if (data[0] == 1) {
-                            //todo(Saud): there should be a longer login script here
                             window.localStorage.setItem('loggedIn', true);
-                            window.localStorage.setItem('userID', $('#id').val());
+                            window.localStorage.setItem('sid', data['sid']);
                             window.location = "menu.html";
                         } else if (data[0] == 0) {
                             //todo: Ala'a, this works but still adds the text every time a failed login happens, can be corrected with a hidden element that we show or anothe js function, up to you

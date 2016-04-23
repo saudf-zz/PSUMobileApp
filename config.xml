@@ -17,21 +17,18 @@
   <allow-intent href="mailto:*" />
   <allow-intent href="geo:*" />
   <!-- Allow links to example.com -->
-<allow-navigation href="http://example.com/*" />
-
-<!-- Wildcards are allowed for the protocol, as a prefix
+  <allow-navigation href="http://example.com/*" />
+  <!-- Wildcards are allowed for the protocol, as a prefix
      to the host, or as a suffix to the path -->
-<allow-navigation href="*://*.example.com/*" />
-
-<!-- A wildcard can be used to whitelist the entire network,
+  <allow-navigation href="*://*.example.com/*" />
+  <!-- A wildcard can be used to whitelist the entire network,
      over HTTP and HTTPS.
      *NOT RECOMMENDED* -->
-<allow-navigation href="*" />
-
-<!-- The above is equivalent to these three declarations -->
-<allow-navigation href="http://*/*" />
-<allow-navigation href="https://*/*" />
-<allow-navigation href="data:*" />
+  <allow-navigation href="*" />
+  <!-- The above is equivalent to these three declarations -->
+  <allow-navigation href="http://*/*" />
+  <allow-navigation href="https://*/*" />
+  <allow-navigation href="data:*" />
   <platform name="android">
     <allow-intent href="market:*" />
   </platform>

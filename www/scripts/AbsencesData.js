@@ -2,7 +2,7 @@
 
 $(function () {
 
-    var url = "http://localhost:38133/Absences.php";
+    var url = "http://localhost:38133/index.php?req=absences";
 
     document.addEventListener('deviceready', onDeviceReady.bind(this), false);
 
@@ -17,14 +17,11 @@ $(function () {
         $.ajax({ 
             type: "POST",
             dataType: "JSON",
-            data: { UserID: window.localStorage.getItem("UserID") },
-            url: "http://localhost:38133/Absences.php",
-            /*success: function (data, s, x) {
-                var xhttp = new XMLHttpRequest();
-                xhttp.open("POST", url, true);
-                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                xhttp.send(window.localStorage.getItem("UserID"));
-            },*/
+            data: { sid: window.localStorage.getItem("sid") },
+            url: url,
+            success: function (data, s, x) {
+                // Ala'a and Khalid: the data returned will be data[rownumber][0] for count of absences and data[rownumber][1] for course name. Plese fill the table as you wish.
+            },
             fail: function () {
                 alert('error');
             }

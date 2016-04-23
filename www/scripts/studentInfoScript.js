@@ -2,8 +2,8 @@
     $.ajax({
         type: "POST",
         dataType: "JSON",
-        data: { UserID: window.localStorage.getItem('userID') },
-        url: "http://localhost:38133/index.php",
+        data: { sid: window.localStorage.getItem('sid') },
+        url: "http://localhost:38133/index.php?req=info",
         success: function (data) {
 
             var values = [];
