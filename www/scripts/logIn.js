@@ -35,8 +35,8 @@ MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAILMveJq+2yD2rTo8Fu9ZqtRyylzLyIU\
                             window.localStorage.setItem('sid', data['sid']);
                             window.location = "menu.html";
                         } else if (data[0] == 0) {
-                            //todo: Ala'a, this works but still adds the text every time a failed login happens, can be corrected with a hidden element that we show or anothe js function, up to you
-                            $('form').after('<b id="loginError">ID and/or Password is wrong!</b>');
+                            //todo: Ala'a and Khalid, use a hidden element called error
+                            $('#error').show();
                         } else {
                             //this means the document returned -1, should never ever happen
                             alert('fatal error, data was not validated.');
