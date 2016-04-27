@@ -10,40 +10,31 @@
         document.addEventListener('resume', onResume.bind(this), false);
 
         $(function () {
-
             var url = "http://localhost:38133/index.php?req=absences";
 
-            document.addEventListener('deviceready', onDeviceReady.bind(this), false);
-
-            function onDeviceReady() {
-                document.addEventListener('pause', onPause.bind(this), false);
-                document.addEventListener('resume', onResume.bind(this), false);
-                /*function showHint(str) {
-                    xhttp.open("POST", url, true);
-                    xhttp.send();
-                }*/
-
-                $.ajax({
-                    type: "POST",
-                    dataType: "JSON",
-                    data: { sid: window.localStorage.getItem("sid") },
-                    url: url,
-                    success: function (data, s, x) {
-                        // Ala'a and Khalid: the data returned will be data[rownumber][0] for count of absences and data[rownumber][1] for course name. Plese fill the table as you wish.
-                    },
-                    fail: function () {
-                        alert('error');
+            $.ajax({
+                type: "POST",
+                dataType: "JSON",
+                data: { sid: window.localStorage.getItem("sid") },
+                url: url,
+                success: function (data, s, x) {
+                    for (var i = data.length - 1; i >= 0 ; i--) {
+                        $("#absencesTable").append("<tr><td>" + data[i][0] + "</td><td>" + data[i][1]
+                            + "</td><td>" + data[i][2] + "</td><td>" + data[i][3] + "</td></tr>");
                     }
-                });
+                },
+                fail: function () {
+                    alert('error');
+                }
+            });
 
-            }
         });
-    };
-    function onPause() {
-        // 
-    };
+        function onPause() {
+            // 
+        };
 
-    function onResume() {
-        // 
+        function onResume() {
+            // 
+        };
     };
 })();
