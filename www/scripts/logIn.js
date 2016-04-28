@@ -13,7 +13,7 @@ function onDeviceReady() {
 
         $('#loginButton').click(function () {
             if (u == '' || p == '') {
-                //invalid input, ala'a please add validation :) and also stopp this event
+                //invalid input, ala'a and Khalid please add validation :) and also stopp this event
             } else {
                 var encrypt = new JSEncrypt();
                 encrypt.setPublicKey("-----BEGIN PUBLIC KEY-----\
