@@ -22,6 +22,11 @@
             $("#studentID").text(values[3]);
             $("#major").text(values[4]);
             $("#gpa").text(values[5]);
+            if (values[6] != 'undef.') {
+                $("#college").text(values[6]);
+            } else {
+                $("#collegeLine").hide();
+            }
         },
         fail: function () {
             //fail code
