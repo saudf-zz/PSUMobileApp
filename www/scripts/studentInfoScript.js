@@ -11,19 +11,12 @@
                 values.push(val);
             }
         );
-            var fullName = "";
-            for (var index = 0; index < 3; index++) {
-                if (index < 2)
-                    fullName += values[index] + " ";
-                else
-                    fullName += values[index];
-            }
-            $("#fullName").text(fullName);
-            $("#studentID").text(values[3]);
-            $("#major").text(values[4]);
-            $("#gpa").text(values[5]);
-            if (values[6] != 'undef.') {
-                $("#college").text(values[6]);
+            $("#fullName").text(values[0]);
+            $("#studentID").text(values[1]);
+            $("#major").text(values[2]);
+            $("#gpa").text(values[3]);
+            if (values[4] !== 'undef.') {
+                $("#college").text(values[4]);
             } else {
                 $("#collegeLine").hide();
             }
