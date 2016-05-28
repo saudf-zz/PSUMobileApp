@@ -1,18 +1,24 @@
-﻿.menu{
+﻿.menu {
     height: 90%;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     width: 100%;
 }
 
-#leftMenu{
+#leftMenu {
     float: left;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     padding-top: 15px;
     width: 50%;
 }
 
-#rightMenu{
+#rightMenu {
     float: right;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     padding-top: 15px;
     width: 50%;
@@ -28,19 +34,21 @@
     margin-left: 15px;
 }
 
-a{
+a.menuButton {
     padding-top: 10px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
     height: 25%;
     margin: 15px 0 0;
     display: block;
     border-radius: 15px;
-    text-decoration:none;
+    text-decoration: none;
     background-color: #25B6C9;
 }
 
 img{
-    height: 70px;
+    height: 50px;
     width: 50px;
     display: block;
     margin: auto auto auto auto;
@@ -48,7 +56,7 @@ img{
 
 label {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     margin: 10px 0;
     text-align: center;
     color: white;
