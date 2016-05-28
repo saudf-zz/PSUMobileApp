@@ -9,15 +9,23 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/tables.css" />
     <script type="text/javascript" src="scripts/jquery/jquery-2.2.3.min.js"></script>
-    <title>Results</title>
+    <title>Transcript</title>
 </head>
 <body>
     <div class="header" data-add-back-btn="true" data-role="header" data-position="fixed">
-        <a class="backButton" href="menu.html"></a>
-        <span>Results</span>
-        </div>
+        <a class="backButton" href="results.html"></a>
+        <span>Transcript</span>
+    </div>
     <div class="contents">
+        <p>
+            <label class="labelName">Semester:</label>
+            <label id="fullName" class="labelInfo">
+                loading...
+                <label class="labelName">GPA:</label>
+                <label id="fullName" class="labelInfo">loading...</label>
+        </p>
         <table class="whiteTable">
+
             <thead>
                 <tr>
                     <th>Code</th>
@@ -72,8 +80,6 @@
                 </tr>
             </tbody>
         </table>
-        <div id="navDiv"> 
-            <a class="navigation" href="transcript.html">Transcript</a>
-        </div> 
+
 </body>
 </html>
