@@ -4,6 +4,11 @@
     padding-left: 0;
 }
 
+#chartContainer{
+    font-size: 30px;
+    font-weight:600;
+}
+
 li {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -21,4 +26,10 @@ a{
 
 li:active{
     background-color: #25B6C9;
+}
+
+#progressCircle{
+    height: 300px;
+    width: 300px;
+    margin: auto;
 }

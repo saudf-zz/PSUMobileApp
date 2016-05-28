@@ -7,8 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
     <link rel="stylesheet" type="text/css" href="css/tables.css" />
     <link rel="stylesheet" type="text/css" href="css/studentPlan.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.circliful.css" />
     <script type="text/javascript" src="scripts/jquery/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="scripts/studentPlanScript.js"></script>
+    <script type="text/javascript" src="scripts/jquery/jquery.circliful.js"></script>
     <script type="text/javascript" src="scripts/addMenu.js"></script>
     <title>PSUMobilApp</title>
 </head>
@@ -18,10 +20,8 @@
         <span>Student Plan</span>
     </div>
     <div class="contents">
-        <div id="planChart">
-            <canvas id="myChart" width="400" height="400"></canvas>
-            <div id="chartContainer" style="height: 300px; width: 100%;">
-            </div>
+        <div id="chartContainer">
+            <div id="progressCircle"></div>
         </div>
         <ul class="studentPlanNav">
             <li><a href="#">In Progress</a></li>
