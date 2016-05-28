@@ -1,23 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="Content-Security-Policy" content="default-src *">
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <script type="text/javascript" src="scripts/jquery/jquery-2.2.3.min.js"></script>
+    <script src="scripts/addMenu.js"></script>
+    <script src="cordova.js"></script>
+    <script src="scripts/studentSchedule.js"></script>
     <link rel="stylesheet" href="css/tables.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <title>PSUMobileApp</title>
 </head>
 <body>
-        <div class="header" data-role="navbar" data-add-back-btn="true" data-position="fixed">
-            <a class="backButton" href="menu.html"></a>
+        <div class="header">
+            <a class="backButton" href="menu.html">&#xE0A6;</a>
             <span>Student Schedule</span>
         </div>
         <div class="contents">
-            <table class="blueTable" data-role="table" id="table">
+            <table class="blueTable" id="table">
                 <thead>
                     <tr>
                         <th id="corner"></th>
@@ -29,69 +32,69 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr data-time="800">
                         <th>08:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td data-day="SUNDAY"></td>
+                        <td data-day="MONDAY"></td>
+                        <td data-day="TUESDAY"></td>
+                        <td data-day="WEDNSDAY"></td>
+                        <td data-day="THURSDAY"></td>
                     </tr>
-                    <tr>
+                    <tr data-time="900">
                         <th>09:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td data-day="SUNDAY"></td>
+                        <td data-day="MONDAY"></td>
+                        <td data-day="TUESDAY"></td>
+                        <td data-day="WEDNSDAY"></td>
+                        <td data-day="THURSDAY"></td>
                     </tr>
-                    <tr>
+                    <tr data-time="1000">
                         <th>10:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td data-day="SUNDAY"></td>
+                        <td data-day="MONDAY"></td>
+                        <td data-day="TUESDAY"></td>
+                        <td data-day="WEDNSDAY"></td>
+                        <td data-day="THURSDAY"></td>
                     </tr>
-                    <tr>
+                    <tr data-time="1100">
                         <th>11:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td data-day="SUNDAY"></td>
+                        <td data-day="MONDAY"></td>
+                        <td data-day="TUESDAY"></td>
+                        <td data-day="WEDNSDAY"></td>
+                        <td data-day="THURSDAY"></td>
                     </tr>
-                    <tr>
+                    <tr data-time="1200">
                         <th>12:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td data-day="SUNDAY"></td>
+                        <td data-day="MONDAY"></td>
+                        <td data-day="TUESDAY"></td>
+                        <td data-day="WEDNSDAY"></td>
+                        <td data-day="THURSDAY"></td>
                     </tr>
-                    <tr>
+                    <tr data-time="1300">
                         <th>13:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td data-day="SUNDAY"></td>
+                        <td data-day="MONDAY"></td>
+                        <td data-day="TUESDAY"></td>
+                        <td data-day="WEDNSDAY"></td>
+                        <td data-day="THURSDAY"></td>
                     </tr>
-                    <tr>
+                    <tr data-time="1400">
                         <th>14:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td data-day="SUNDAY"></td>
+                        <td data-day="MONDAY"></td>
+                        <td data-day="TUESDAY"></td>
+                        <td data-day="WEDNSDAY"></td>
+                        <td data-day="THURSDAY"></td>
                     </tr>
-                    <tr>
+                    <tr data-time="1500">
                         <th>15:00</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td data-day="SUNDAY"></td>
+                        <td data-day="MONDAY"></td>
+                        <td data-day="TUESDAY"></td>
+                        <td data-day="WEDNSDAY"></td>
+                        <td data-day="THURSDAY"></td>
                     </tr>
                 </tbody>
             </table>
