@@ -24,7 +24,7 @@ a.backButton{
     text-decoration: none;
 }
 
-span{
+span.title{
     color: white;
     padding: 15px;
     font-size: medium;
@@ -86,4 +86,79 @@ a.navigation{
 
 #newsDiv{
     margin: auto;
+}
+
+    /********************************
+    ******     Slide Menu     *******
+    *********************************/
+
+#slideMenuLogo{
+    height: 180px;
+    padding-bottom: 50px;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #25B6C9;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.openSlideMenu{
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 28px;
+    font-weight:900;
+    color: white;
+    top: 35%;
+    right: 10px;
+    position: absolute;
+}
+
+br{
+    font-weight: 800;
+    background-color:white;
+}
+
+.showSlideMenu{
+    width: 200px;
+}
+
+.backgroundColor{
+    background-color: rgba(0,0,0,0.4);
 }
