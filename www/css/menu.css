@@ -7,20 +7,20 @@
 }
 
 #leftMenu {
+    height: 100%;
     float: left;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    padding-top: 15px;
     width: 50%;
 }
 
 #rightMenu {
+    height: 100%;
     float: right;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    padding-top: 15px;
     width: 50%;
 }
 
@@ -36,11 +36,12 @@
 
 a.menuButton {
     padding-top: 10px;
+    position: relative;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    height: 25%;
-    margin: 15px 0 0;
+    height: 21%;
+    margin: 10px 0 0;
     display: block;
     border-radius: 15px;
     text-decoration: none;
@@ -51,7 +52,9 @@ img{
     height: 50px;
     width: 50px;
     display: block;
-    margin: auto auto auto auto;
+    padding-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 label {
