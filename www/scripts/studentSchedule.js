@@ -8,7 +8,6 @@
         document.addEventListener('pause', onPause.bind(this), false);
         document.addEventListener('resume', onResume.bind(this), false);
         function toNearestHundred(num) {
-            //shows you how stupid is JS ya 3yal!
             return 100 * Math.round(num / 100.0);
         }
 
