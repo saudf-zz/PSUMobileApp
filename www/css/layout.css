@@ -8,15 +8,32 @@ body, html {
     font-family: Neo Tech;
     font-size: 100%;
     font-weight:500;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+a.backButton{
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin: auto;
+    top: 35%;
+    left: 10px;
+    position: absolute;
+    text-decoration: none;
 }
 
 span{
     color: white;
     padding: 15px;
     font-size: medium;
-    /*xfont-size: 3.5vw;*/
+    /*font-size: 3.5vw;*/
+    position: absolute;
+    top: 20%;
+    bottom: 30%;
+    left: 20%;
+    right: 20%;
     font-weight:800;
     display: block;
     text-align: center;
@@ -25,10 +42,6 @@ span{
 p{
     font-size: 20px;
     color: #727272;
-}
-
-img {
-    object-fit: contain;
 }
 
 input[type=text], input[type=password], input[type=number]{
@@ -58,9 +71,10 @@ a.navigation{
     height: 10%;
     background-color: #25B6C9;
     color: #FFFFFF;
-    margin: 0px;
+    margin: 0;
     text-align: center;
     vertical-align: central;
+    position: relative;
 }
 
 
