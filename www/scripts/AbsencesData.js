@@ -8,7 +8,6 @@
     function onDeviceReady() {
         document.addEventListener('pause', onPause.bind(this), false);
         document.addEventListener('resume', onResume.bind(this), false);
-
         $(function () {
             var url = "http://localhost:38133/index.php?req=absences";
 
