@@ -2,6 +2,11 @@
     font-family: Neo Tech;
     src:url('../fonts/NeoTech.otf');
 }
+
+* {
+    box-sizing: border-box;
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -14,8 +19,10 @@ body, html {
 
 a.backButton{
     font-family: 'Segoe MDL2 Assets';
+    display: block;
+    height: 100%;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: bold;
     color: white;
     margin: auto;
     top: 35%;
@@ -24,24 +31,32 @@ a.backButton{
     text-decoration: none;
 }
 
+a.backButton:hover, a.backButton:focus, a.backButton:active{
+    color: #ccc;
+}
+
 span.title{
     color: white;
-    padding: 15px;
     font-size: medium;
     /*font-size: 3.5vw;*/
     position: absolute;
-    top: 20%;
-    bottom: 30%;
-    left: 20%;
-    right: 20%;
+    top: 40%;
+    left: 0;
+    right: 0;
     font-weight:800;
     display: block;
-    text-align: center;
 }
 
 p{
     font-size: 20px;
     color: #727272;
+}
+
+p.par-menu{
+    margin: auto;
+    padding: 10px 0;
+    width: 85%;
+    border-bottom: 1px dotted #fff;
 }
 
 input[type=text], input[type=password], input[type=number]{
@@ -104,7 +119,7 @@ a.navigation{
     z-index: 1; /* Stay on top */
     top: 0;
     right: 0;
-    background-color: #25B6C9;
+    background-color: rgba(135,133,143, 0.95);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     -moz-transition: 0.5s;
@@ -123,6 +138,10 @@ a.navigation{
     -o-transition: 0.3s;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+}
+
+.sidenav a:hover, .sidenav a:focus, .sidenav a:active{
+    color: #25B6C9;
 }
 
 /* Position and style the close button (top right corner) */
